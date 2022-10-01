@@ -1,8 +1,7 @@
-import { InferGetStaticPropsType } from "next";
-
 import { allPosts } from "contentlayer/generated";
+import { InferGetStaticPropsType } from "next";
+import BlogPost from "../components/BlogPost";
 import Container from "../components/Container";
-import RecentPosts from "../components/RecentPosts";
 
 export const getStaticProps = async () => {
   const posts = allPosts.sort(
@@ -15,13 +14,21 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Home({
+export default function Blog({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Container>
-      <div className={`my-5 w-full`}>
-        <RecentPosts posts={posts} />
+      <div className={`mt-10 flex flex-col`}>
+        {posts.map((post) => (
+          <BlogPost
+            date={post.date}
+            title={post.title}
+            des={post.description}
+            slug={post._raw.flattenedPath}
+            key={post._id}
+          />
+        ))}
       </div>
     </Container>
   );

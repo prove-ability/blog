@@ -1,0 +1,18 @@
+{
+  "title": "Pre-rendering 이란?",
+  "date": "2022-10-01",
+  "description": "Next.js에서 제공하는 Pre-rendering에 대해 알아보자.",
+  "body": {
+    "raw": "\n## 제목\n\n- 내용 1\n- 내용 2\n",
+    "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var _=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),g=(e,n)=>{for(var r in n)s(e,r,{get:n[r],enumerable:!0})},o=(e,n,r,c)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let i of h(n))!j.call(e,i)&&i!==r&&s(e,i,{get:()=>n[i],enumerable:!(c=x(n,i))||c.enumerable});return e};var f=(e,n,r)=>(r=e!=null?u(m(e)):{},o(n||!e||!e.__esModule?s(r,\"default\",{value:e,enumerable:!0}):r,e)),p=e=>o(s({},\"__esModule\",{value:!0}),e);var a=_((F,l)=>{l.exports=_jsx_runtime});var w={};g(w,{default:()=>b,frontmatter:()=>D});var t=f(a()),D={title:\"Pre-rendering \\uC774\\uB780?\",date:new Date(16645824e5),description:\"Next.js\\uC5D0\\uC11C \\uC81C\\uACF5\\uD558\\uB294 Pre-rendering\\uC5D0 \\uB300\\uD574 \\uC54C\\uC544\\uBCF4\\uC790.\"};function d(e){let n=Object.assign({h2:\"h2\",ul:\"ul\",li:\"li\"},e.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:\"\\uC81C\\uBAA9\"}),`\n`,(0,t.jsxs)(n.ul,{children:[`\n`,(0,t.jsx)(n.li,{children:\"\\uB0B4\\uC6A9 1\"}),`\n`,(0,t.jsx)(n.li,{children:\"\\uB0B4\\uC6A9 2\"}),`\n`]})]})}function M(e={}){let{wrapper:n}=e.components||{};return n?(0,t.jsx)(n,Object.assign({},e,{children:(0,t.jsx)(d,e)})):d(e)}var b=M;return p(w);})();\n;return Component;"
+  },
+  "_id": "first.mdx",
+  "_raw": {
+    "sourceFilePath": "first.mdx",
+    "sourceFileName": "first.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "first"
+  },
+  "type": "Post"
+}
