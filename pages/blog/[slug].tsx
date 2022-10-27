@@ -27,7 +27,7 @@ export default function Post({
     title: post.title,
     description: post.description,
     date: new Date(post.date).toISOString(),
-    readingTime: post.readingTime,
+    // readingTime: post.readingTime,
   };
   return (
     <Container customMeta={customMeta}>

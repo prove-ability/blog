@@ -8,7 +8,6 @@ export default function Container(props) {
     ...metadata,
     ...props.customMeta,
   };
-
   return (
     <div className={`w-full flex flex-col items-center p-3`}>
       <Head>
@@ -34,9 +33,9 @@ export default function Container(props) {
         </div>
         <Nav />
       </header>
-      <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-500">
+      {/* <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-500">
         {meta.readingTime.text}
-      </span>
+      </span> */}
       <main className={`w-full max-w-3xl`}>{props.children}</main>
     </div>
   );
