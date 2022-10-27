@@ -14,5 +14,13 @@
     "contentType": "mdx",
     "flattenedPath": "2022-10-01_pre-rendering"
   },
-  "type": "Post"
+  "type": "Post",
+  "readingTime": {
+    "text": "6 min read",
+    "minutes": 5.73,
+    "time": 343800,
+    "words": 1146
+  },
+  "wordCount": 468,
+  "slug": "2022-10-01_pre-rendering"
 }

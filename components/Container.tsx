@@ -34,6 +34,9 @@ export default function Container(props) {
         </div>
         <Nav />
       </header>
+      <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-500">
+        {meta.readingTime.text}
+      </span>
       <main className={`w-full max-w-3xl`}>{props.children}</main>
     </div>
   );

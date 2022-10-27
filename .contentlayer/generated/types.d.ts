@@ -18,7 +18,9 @@ export type Post = {
   description: string
   /** MDX file body */
   body: MDX
-
+  readingTime: json
+  wordCount: number
+  slug: string
 }  
 
 /** Nested types */
